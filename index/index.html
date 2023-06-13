@@ -7,12 +7,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <!--My style-->
     <link rel="stylesheet" href="../style/style.css">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
     <title>Vue Email List</title>
 </head>
 <body>
     <!--VUE-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+    <h1>
+        Random email generator by Boolean
+    </h1>
     <div id="app">
         <ul v-if="emailList.length === 10">
             <li v-for="email in emailList" >
@@ -20,7 +27,9 @@
             </li>
         </ul>
     </div>
-
+    <h2>
+        refresh for new 10 email
+    </h2>
     <!--Js script-->
     <script src="../script/script.js"></script>
 </body>
